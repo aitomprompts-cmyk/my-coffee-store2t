@@ -75,8 +75,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -182,8 +181,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "81ac6fc86e782f47",
+  "active": "423dab8875677787",
   "lastOpenFiles": [
+    "CLAUDE.md",
     "docs/03-testing/02-test-result/index.md",
     "docs/03-testing/01-test-plan/index.md",
     "docs/02-design/02-technical/index.md",
