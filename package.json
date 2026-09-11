@@ -1,0 +1,17 @@
+{
+  "name": "my-coffee-store2t",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "สั่งกาแฟผ่านมือถือที่โต๊ะ (Self-Order) — การบ้าน ADT-RAISE Batch 2 Module 2 (Firestore)",
+  "scripts": {
+    "dev": "serve -l 3001 .",
+    "seed": "node scripts/seed.mjs"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "dependencies": {
+    "firebase": "^12.18.0"
+  }
+}

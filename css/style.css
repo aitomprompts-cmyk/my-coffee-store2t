@@ -1,0 +1,108 @@
+/* หน้าตาร้านกาแฟ — โทนน้ำตาลกาแฟ พื้นครีม หัวข้อสีน้ำเงิน */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600;700&display=swap");
+
+:root {
+  --coffee: #6F4E37;
+  --blue: #1565C0;
+  --yellow: #F9A825;
+  --green: #2E7D32;
+  --red: #C62828;
+  --surface: #FAF7F2;
+  --card: #ffffff;
+  --text: #2b211b;
+  --muted: #6d5d52;
+  --line: #eadfd5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans Thai", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 20px;
+  padding: 12px 16px;
+  background: var(--coffee);
+  color: #fff;
+}
+.navbar .brand { font-weight: 700; margin-right: 12px; }
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+.navbar a.active,
+.navbar a:hover { opacity: 1; border-bottom-color: var(--yellow); }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 24px 16px 48px; }
+
+h1 { margin: 0 0 4px; font-size: 28px; color: var(--blue); }
+h2 { margin: 0 0 8px; font-size: 20px; color: var(--blue); }
+.subtitle { margin: 0 0 16px; color: var(--muted); }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+th { font-size: 14px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+td.time, td.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.table-no { font-weight: 700; white-space: nowrap; }
+td.barista { white-space: nowrap; }
+.menu-name { font-weight: 600; }
+.note { display: block; font-size: 14px; color: var(--muted); }
+.empty { color: var(--muted); }
+.count { margin: 0 0 8px; color: var(--muted); font-size: 14px; }
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badge-received { background: #fff5d6; color: #7a5200; border: 1px solid var(--yellow); }
+.badge-making   { background: #e3eefb; color: #0d47a1; border: 1px solid var(--blue); }
+.badge-done     { background: #e6f2e7; color: var(--green); border: 1px solid var(--green); }
+.badge-unknown  { background: #eeeeee; color: #333333; border: 1px solid #cccccc; }
+
+.alert { border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+.alert-warn { background: #fff5d6; border: 1px solid var(--yellow); }
+.error { color: var(--red); }
+
+.btn {
+  display: inline-block;
+  background: var(--coffee);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .hide-mobile { display: none; }
+  h1 { font-size: 24px; }
+}
