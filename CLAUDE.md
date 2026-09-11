@@ -4,9 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-This is a **documentation-only Obsidian vault**, not a codebase — there is no source code, package manifest, build tool, linter, or test suite. All work here is writing/editing Markdown files under `docs/`. There are no build, lint, or test commands to run.
+This repository has two parts, both written in Thai:
 
-The vault documents the planning and development of "my-coffee-store2t" (a coffee store project). Content is written in Thai.
+1. **An Obsidian vault under `docs/`** that documents the planning of "my-coffee-store2t", a table-side coffee self-order system. Most work here is writing Markdown.
+2. **A small static web app at the repo root** (plain HTML/CSS/JS, no framework, no build step) that reads from Firebase Firestore. It is the ADT-RAISE Batch 2 Module 2 homework (weeks 6–9). Its scope is fixed in `SCOPE.md` and its data model in `docs/02-design/02-technical/data-structure.md`.
+
+Commands for the web app:
+
+```
+npm install      # install serve + firebase
+npm run dev      # serve the site on http://localhost:3001 (port 3000 is used by another app on this machine)
+npm run seed     # write sample data to Firestore; needs real values in js/firebase-config.js
+```
+
+Course constraints for the web app: week 6 is read-only (no create/update/delete or login until week 7); sample data must use fictional names only; keep to the scope in `SCOPE.md` and log extra ideas in the backlog's "Backlog Sprint 2" section instead of building them.
 
 ## Structure and workflow
 
