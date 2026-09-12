@@ -1,0 +1,12 @@
+{
+  "name": "fixit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FixIt ระบบแจ้งซ่อมออนไลน์ — การบ้าน ADT-RAISE Batch 2 Module 2",
+  "scripts": {
+    "dev": "serve -l 3001 ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
